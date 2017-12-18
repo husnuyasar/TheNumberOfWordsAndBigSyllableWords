@@ -1,0 +1,55 @@
+
+<html>
+<head>
+<title>jQuery Get Tag Value</title>
+ 
+<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+ 
+</head>
+ 
+<script type="text/javascript">
+ 
+$(document).ready(function(){
+	
+	
+});
+function Calculate(){
+	
+	var temp = $('textarea#p').val();
+	var kelime =temp.split(" ");
+	
+	 alert("Kelime sayısı:"+kelime.length);
+	 var s=0;
+	 for(var i=0; i<kelime.length; i++){
+		if(kelime[i].length>3){
+			
+			counter++;
+		}
+		var counter=0;
+		for(var j=0; j<kelime[i].length;j++){
+			
+			if(kelime[i][j]=='a' || kelime[i][j]=='e' || kelime[i][j]=='i' || kelime[i][j]=='ı' || kelime[i][j]=='o' || kelime[i][j]=='ö' || kelime[i][j]=='u' || kelime[i][j]=='ü'){
+				
+				
+				counter++;
+			}
+			
+		}
+		if(counter>3){
+		
+				s++;
+			}
+	 }
+	 alert("Büyük hece sayısı:"+s);
+}
+</script>
+<body>
+
+
+	<textarea id="p" style="margin: 0px; height: 261px; width: 693px;"></textarea>	
+	<br>
+	<input id="start" type="button" value="Calculate" onclick="Calculate()">
+	
+
+</body>
+</html>
