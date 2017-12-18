@@ -1,1 +1,1 @@
-Paragraf netlik indeksi hesaplanmasında kullanılan kelime ve büyük heceli kelimeleri (>3) adetlerini hızlı şekilde hesaplaplar, gösterir.
+Paragraf netlik indeksi hesaplanmasında kullanılan kelime ve büyük heceli kelimelerin (>3) adetlerini hızlı şekilde hesaplar, gösterir.
